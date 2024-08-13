@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { createFromIconfont } from "./Icon/createFromIconfont";
+
+const IconFont = createFromIconfont(
+	"//at.alicdn.com/t/c/font_4652778_1mpld7v1cph.js"
+);
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div>
+			<div style={{ padding: "50px" }}>
+				<IconFont type="icon-cart-empty" size="40px"></IconFont>
+				<IconFont
+					type="icon-cart-empty-fill"
+					fill="blue"
+					size="40px"
+				></IconFont>
+			</div>
+		</div>
+	);
 }
 
 export default App;
